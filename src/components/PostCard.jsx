@@ -12,6 +12,7 @@ const PostCard = ({ post, onDelete }) => {
       console.error(error);
     }
   };
+  console.log("IMAGE:", post.image);
 
   return (
     <div className="bg-white rounded-xl shadow overflow-hidden">
