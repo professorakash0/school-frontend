@@ -7,7 +7,6 @@ import ClassTable from "../components/ClassTable.jsx";
 const Classes = () => {
     const [search, setSearch] = useState("");
     const [classes, setClasses] = useState([]);
-    console.log(classes);
     
 
     

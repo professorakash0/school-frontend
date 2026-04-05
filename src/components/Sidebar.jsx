@@ -13,7 +13,6 @@ const Sidebar = ()=> {
         <SidebarItem icon={<Presentation size={18} />} label="teachers" to="/admin/teachers" />
         <SidebarItem icon={<BookOpen size={18} />} label="Classes" to="/admin/classes"/>
         <SidebarItem icon={<FileText size={18} />} label="Posts" to="/admin/posts"/>
-        <SidebarItem icon={<Settings size={18} />} label="Settings" to="/admin/settings"/>
       </nav>
     </aside>
   );
