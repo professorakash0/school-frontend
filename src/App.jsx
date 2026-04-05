@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -21,7 +22,7 @@ import PostDetail from "./pages/user/PostDetail";
 
 function App() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route path="/admin" element={<Login />} />
                 <Route path="/admin/dashboard" element=
@@ -109,8 +110,9 @@ function App() {
                 <Route path="/fee" element={<FeeStructure />} />
                 <Route path="/updates" element={<AboutSchool/>} />
                 <Route path="/post/:id" element={<PostDetail />} />
+                <Route path="*" element={<h1>Page Not Found</h1>} />
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
