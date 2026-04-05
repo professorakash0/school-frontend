@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://school-production-f386.up.railway.app/api"
+  baseURL: "https://school-production-f386.up.railway.app/api"
 });
 
 API.interceptors.request.use((req) => {
