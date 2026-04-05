@@ -47,7 +47,7 @@ const PostDetail = () => {
           {/* 🖼️ Image */}
           {post.image && (
             <img
-              src={`http://localhost:5000${post.image}`}
+              src={`https://school-production-f386.up.railway.app${post.image}`}
               alt="post"
               className="w-full h-72 object-cover"
             />
