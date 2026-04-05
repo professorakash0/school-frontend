@@ -1,16 +1,58 @@
-# React + Vite
+# 🎓 School Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack School Management System built with the MERN stack to manage students, teachers, classes, and school updates efficiently.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
+🔗 Live App: https://school-frontend-production-c8f0.up.railway.app/
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📌 Features
 
-## Expanding the ESLint configuration
+### 👨‍💼 Admin Panel
+- Manage Students (Add, Edit, Delete)
+- Manage Teachers (Assign class incharge)
+- Manage Classes (Fee structure included)
+- Track Fee Status (Paid / Not Paid)
+- Track Fee & Salary Paid Dates
+- Create & Manage Posts (with image upload)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🧑‍🎓 Student Management
+- Assign students to classes
+- Fee tracking system
+- Fee paid date tracking
+
+### 👨‍🏫 Teacher Management
+- Assign class incharge
+- Salary status tracking
+- Salary paid date
+
+### 🏫 Class Management
+- Class-wise student count
+- Monthly fee structure
+- Class incharge system
+
+### 📰 Public Website
+- Displays posts created by admin
+- Clickable post cards
+- Detailed post view page
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React.js
+- Tailwind CSS
+- Axios
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB (Mongoose)
+
+### Deployment
+- Railway (Backend)
+- Railway (frontent)
