@@ -47,7 +47,7 @@ const PostsSection = () => {
               {/* Image */}
               {p.image && (
                 <img
-                  src={`https://school-production-f386.up.railway.app${p.image}`}
+                  src={p.image}
                   alt="post"
                   className="w-full h-40 object-cover rounded-lg mb-3"
                 />
