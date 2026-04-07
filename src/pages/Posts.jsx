@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import API from "../services/api.js";
 import PostCard from "../components/PostCard.jsx";
 import { useNavigate } from "react-router-dom";
+import BackButton from "../components/BackButton.jsx";
 
 const Posts = () => {
   const [posts, setPosts] = useState([]);
@@ -27,6 +28,7 @@ const Posts = () => {
       
       {/* Header */}
       <div className="flex justify-between items-center">
+        <BackButton />
         <h1 className="text-2xl font-bold">Posts</h1>
         <button
           onClick={() => navigate("/admin/posts/create")}
