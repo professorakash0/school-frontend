@@ -6,12 +6,7 @@ const Topbar = ({ setIsOpen }) => {
       
       {/* Left */}
       <div className="flex items-center gap-3">
-        
-        {/* Hamburger (mobile only) */}
-        <button
-          className="md:hidden"
-          onClick={() => setIsOpen(true)}
-        >
+        <button className="md:hidden" onClick={() => setIsOpen(true)}>
           <Menu size={24} />
         </button>
 
@@ -22,16 +17,12 @@ const Topbar = ({ setIsOpen }) => {
 
       {/* Right */}
       <div className="flex items-center gap-3 sm:gap-4">
-        
-        {/* Bell */}
         <Bell className="text-gray-600" size={20} />
 
-        {/* Avatar */}
-        <div className="w-8 h-8 sm:w-10 sm:h-10 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm sm:text-base">
+        <div className="w-8 h-8 sm:w-10 sm:h-10 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">
           A
         </div>
 
-        {/* Logout */}
         <button
           onClick={() => {
             localStorage.removeItem("token");

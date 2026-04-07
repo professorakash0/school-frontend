@@ -16,16 +16,13 @@ const RecentStudents = () => {
   return (
     <div className="bg-white rounded-2xl shadow p-4 sm:p-6">
       
-      {/* Title */}
       <h2 className="text-base sm:text-lg font-semibold mb-4">
         Recent Students
       </h2>
 
-      {/* Table Wrapper */}
       <div className="w-full overflow-x-auto">
         <table className="min-w-[500px] w-full text-left text-sm sm:text-base">
           
-          {/* Head */}
           <thead>
             <tr className="text-gray-500 border-b">
               <th className="py-2 pr-4">Name</th>
@@ -34,7 +31,6 @@ const RecentStudents = () => {
             </tr>
           </thead>
 
-          {/* Body */}
           <tbody>
             {students.map((s) => (
               <TableRow
@@ -45,6 +41,7 @@ const RecentStudents = () => {
               />
             ))}
           </tbody>
+
         </table>
       </div>
     </div>

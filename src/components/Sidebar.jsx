@@ -21,50 +21,21 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
       `}
     >
       {/* Header */}
-      <div className="p-6 text-2xl font-bold text-blue-600 border-b flex items-center justify-between">
+      <div className="p-6 text-xl font-bold text-blue-600 border-b flex justify-between items-center">
         School Admin
 
-        {/* Close button (mobile only) */}
-        <button
-          className="md:hidden"
-          onClick={() => setIsOpen(false)}
-        >
+        <button className="md:hidden" onClick={() => setIsOpen(false)}>
           <X size={22} />
         </button>
       </div>
 
       {/* Nav */}
-      <nav className="flex-1 p-4 space-y-3 overflow-y-auto">
-        <SidebarItem
-          icon={<LayoutDashboard size={18} />}
-          label="Dashboard"
-          to="/admin/dashboard"
-          active
-        />
-
-        <SidebarItem
-          icon={<Users size={18} />}
-          label="Students"
-          to="/admin/students"
-        />
-
-        <SidebarItem
-          icon={<Presentation size={18} />}
-          label="Teachers"
-          to="/admin/teachers"
-        />
-
-        <SidebarItem
-          icon={<BookOpen size={18} />}
-          label="Classes"
-          to="/admin/classes"
-        />
-
-        <SidebarItem
-          icon={<FileText size={18} />}
-          label="Posts"
-          to="/admin/posts"
-        />
+      <nav className="flex-1 p-4 space-y-2 overflow-y-auto">
+        <SidebarItem icon={<LayoutDashboard size={18} />} label="Dashboard" to="/admin/dashboard" />
+        <SidebarItem icon={<Users size={18} />} label="Students" to="/admin/students" />
+        <SidebarItem icon={<Presentation size={18} />} label="Teachers" to="/admin/teachers" />
+        <SidebarItem icon={<BookOpen size={18} />} label="Classes" to="/admin/classes" />
+        <SidebarItem icon={<FileText size={18} />} label="Posts" to="/admin/posts" />
       </nav>
     </aside>
   );
