@@ -2,7 +2,7 @@ import { Bell, Menu } from "lucide-react";
 
 const Topbar = ({ setIsOpen }) => {
   return (
-    <header className="bg-white shadow-sm px-4 sm:px-6 py-4 flex items-center justify-between">
+    <header className="bg-white border-b px-4 sm:px-6 py-4 flex items-center justify-between sticky top-0 z-30">
       
       {/* Left */}
       <div className="flex items-center gap-3">

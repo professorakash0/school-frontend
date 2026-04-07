@@ -13,12 +13,13 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
   return (
     <aside
       className={`
-        fixed md:static top-0 left-0 h-full w-64 bg-white shadow-lg z-50
-        transform transition-transform duration-300
-        ${isOpen ? "translate-x-0" : "-translate-x-full"}
-        md:translate-x-0
-        flex flex-col
-      `}
+    fixed md:sticky top-0 left-0 h-screen md:h-screen w-64 
+    bg-white border-r shadow-sm z-50
+    transform transition-transform duration-300
+    ${isOpen ? "translate-x-0" : "-translate-x-full"}
+    md:translate-x-0
+    flex flex-col
+  `}
     >
       {/* Header */}
       <div className="p-6 text-xl font-bold text-blue-600 border-b flex justify-between items-center">
