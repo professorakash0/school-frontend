@@ -5,7 +5,7 @@ A full-stack School Management System built with the MERN stack to manage studen
 ---
 
 ## 🚀 Live Demo
-🔗 Live App: https://school-frontend-production-c8f0.up.railway.app/
+🔗 Live App: 
 
 ---
 

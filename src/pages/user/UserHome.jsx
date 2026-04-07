@@ -11,7 +11,7 @@ import PostsSection from "./PostingSection";
 
 const UserHome = () => {
   return (
-    <div id="home" className="min-h-screen bg-[#f5f7fb]">
+    <div id="home" className="min-h-screen bg-[#f5f7fb] pt-16">
       <Navbar />
       <Hero />
       <AboutSchool />
