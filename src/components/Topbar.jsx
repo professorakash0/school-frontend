@@ -26,7 +26,7 @@ const Topbar = ({ setIsOpen }) => {
         <button
           onClick={() => {
             localStorage.removeItem("token");
-            window.location.href = "/admin";
+            window.location.href = "/#/admin";
           }}
           className="text-xs sm:text-sm text-red-500 hover:underline"
         >

@@ -46,8 +46,6 @@ const AddStudentForm = ()=> {
     }
 
     try {
-      console.log("Submitting:", form);
-
       await API.post("/students", form);
 
       alert("Student added successfully");
